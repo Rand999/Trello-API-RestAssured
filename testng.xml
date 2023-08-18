@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+<<<<<<< HEAD
     <test verbose="2" preserve-order="true" name="C:/Users/yazan/IdeaProjects/Attlasian-Board">
         <classes>
             <class name="TC01_CheckCreateBoard_POST">
@@ -14,6 +15,187 @@
                     <include name="CheckGetBoardWithValidData"/>
                 </methods>
             </class>
+=======
+    <test verbose="2" preserve-order="true" name="C:/Users/rand/IdeaProjects/Attlasian-boards">
+        <classes>
+            <class name="Testcases.TC01_CheckCreateBoard_POST">
+                <methods>
+                    <include name="CheckCreatingBoardWithValidData_P"/>
+                    <include name="CheckCreatingBoardWithInvalidPath"/>
+                    <include name="CheckCreatingBoardWithInvalidHeader"/>
+                    <include name="CheckCreatingBoardWithInvalidMethod"/>
+                    <include name="CheckCreatingBoardWithAuth"/>
+                    <include name="checkNameAsExpected_P"/>
+                    <include name="checkNameNotEmpty_P"/>
+
+                </methods>
+            </class>
+            <class name="Testcases.TC02_CheckGettingBoard_GET">
+                <methods>
+                    <include name="CheckGetBoardWithValidData"/>
+                    <include name="CheckNameIsnottEmpty"/>
+                    <include name="CheckNameAsExpected"/>
+                    <include name="CheckPermissionLevelValue"/>
+                    <include name="CheckpermissionLevelnotEmpty"/>
+                    <include name="CheckVotingValue"/>
+                    <include name="CheckvotingsnotEmpty"/>
+                    <include name="CheckcommentsValue"/>
+                    <include name="CheckcommentsnotEmpty"/>
+                    <include name="CheckinvitationsValue"/>
+                    <include name="CheckprefsinvitationsnotEmpty"/>
+                    <include name="CheckhideVotesValue"/>
+                    <include name="CheckinvitationsnotEmpty"/>
+
+                </methods>
+            </class>
+            <class name="Testcases.TC03_CheckUpdatingBoard">
+                <methods>
+                    <include name="CheckUpdateBoardWithValidData_P"/>
+                    <include name="CheckNameNotEmpty"/>
+                </methods>
+            </class>
+            <class name="Testcases.TC04_CheckGetDataAfterUpdating">
+                <methods>
+                    <include name="CheckGeyDataAfterUpdate_P"/>
+                    <include name="CheckUpdatedValuename"/>
+
+                </methods>
+            </class>
+
+
+            <class name="Testcases.TC05_CheckCreatingAlable">
+                <methods>
+                    <include name="CheckCreatingLabelWithValidData_P"/>
+                    <include name="CheckCreatingLabelWithInvalidPath"/>
+                    <include name="CheckCreatingLabelWithInvalidHeader"/>
+                    <include name="CheckCreatingLabelWithInvalidMethod"/>
+                    <include name="CheckCreatingLabelWithAuth"/>
+                    <include name="checkNameAsExpected_P"/>
+                    <include name="checkNameNotEmpty_P"/>
+                </methods>
+            </class>
+            <class name="Testcases.TC06_CheckGettingLabelByID">
+                <methods>
+                    <include name="CheckGetLabelWithValidData_P"/>
+                    <include name="CheckGetLabelWithInvalidPath"/>
+                    <include name="CheckGetLabelWithInvalidHeader"/>
+                    <include name="CheckGetLabelWithInvalidMethod"/>
+                    <include name="CheckGetLabelWithAuth"/>
+                    <include name="checkNameAsExpected_P"/>
+                    <include name="checkNameNotEmpty_P"/>
+                </methods>
+            </class>
+            <class name="Testcases.TC07_CheckGettingLabels">
+                <methods>
+                    <include name="CheckGetLabelesWithValidData_P"/>
+                    <include name="CheckGetLabelesWithInvalidPath"/>
+                    <include name="CheckGetLabelesWithInvalidHeader"/>
+                    <include name="CheckGetLabelesWithInvalidMethod"/>
+                    <include name="CheckGetLabelesWithAuth"/>
+                    <include name="checkNameAsExpected_P"/>
+                    <include name="checkNameNotEmpty_P"/>
+                </methods>
+            </class>
+            <class name="Testcases.TC08_CheckUpdatingAlabel">
+                <methods>
+                    <include name="CheckUpdateLabelWithValidData_P"/>
+                    <include name="CheckUpdateLabelWithInvalidPath"/>
+                    <include name="CheckUpdateLabelWithInvalidHeader"/>
+                    <include name="CheckUpdateLabelWithInvalidMethod"/>
+                    <include name="CheckUpdateLabelWithAuth"/>
+                    <include name="checkNameAsExpected_P"/>
+                    <include name="checkColorAsExpected_P"/>
+                    <include name="checkNameNotEmpty_P"/>
+                </methods>
+            </class>
+            <class name="Testcases.TC09_CheckGettingLabelAfterUpdating">
+                <methods>
+                    <include name="CheckGetLabelWithValidData_P"/>
+                    <include name="CheckGetLabelWithInvalidPath"/>
+                    <include name="CheckGetLabelWithInvalidHeader"/>
+                    <include name="CheckGetLabelWithInvalidMethod"/>
+                    <include name="CheckGetLabelWithAuth"/>
+                    <include name="checkNameAsExpected_P"/>
+                    <include name="checkColorAsExpected_P"/>
+                    <include name="checkNameNotEmpty_P"/>
+
+                </methods>
+            </class>
+
+            <class name="Testcases.TC10_DeleteAlabel">
+                <methods>
+                    <include name="CheckDeleteBoardWithValidData_P"/>
+
+                </methods>
+            </class>
+
+            <class name="Testcases.TC11_ChecCreatingList">
+                <methods>
+                    <include name="Check_creat_ListWithValidData_P"/>
+                    <include name="Check_create_ListWithInvalidPath"/>
+                    <include name="Check_Create_ListWithInvalidMethod"/>
+                    <include name="checkNameAsExpected_P"/>
+                    <include name="checkNameNotEmpty_P"/>
+
+
+                </methods>
+            </class>
+
+
+            <class name="Testcases.TC12_CheckGitLists">
+                <methods>
+                    <include name="Check_Get_ListWithValidData_P"/>
+                    <include name="CheckGetListWithInvalidPath"/>
+                    <include name="CheckGetListWithInvalidHeader"/>
+                    <include name="CheckCreatingListWithInvalidMethod"/>
+                    <include name="CheckGetListWithAuth"/>
+                    <include name="checkNameAsExpected_P"/>
+                    <include name="checkNameNotEmpty_P"/>
+
+                </methods>
+            </class>
+
+
+
+            <class name="Testcases.TC13_CheckUpdateAlist">
+                <methods>
+                    <include name="Check_Get_ListWithValidData_P"/>
+                    <include name="CheckGetListWithInvalidPath"/>
+                    <include name="CheckGetListWithInvalidHeader"/>
+                    <include name="CheckCreatingListWithInvalidMethod"/>
+                    <include name="CheckGetListWithAuth"/>
+                    <include name="checkNameAsExpected_P"/>
+                    <include name="checkClosedAsExpected_P"/>
+                    <include name="checkNameNotEmpty_P"/>
+
+                </methods>
+            </class>
+
+
+            <class name="Testcases.TC14_Check_Get_List_After_Update">
+                <methods>
+                    <include name="Check_Get_ListWithValidData_P"/>
+                    <include name="CheckGetListWithInvalidPath"/>
+                    <include name="CheckGetListWithInvalidHeader"/>
+                    <include name="CheckCreatingListWithInvalidMethod"/>
+                    <include name="CheckGetListWithAuth"/>
+                    <include name="checkNameAsExpected_P"/>
+                    <include name="checkNameNotEmpty_P"/>
+
+
+                </methods>
+            </class>
+
+            <class name="Testcases.TC16_DeleteBoard">
+                <methods>
+                    <include name="CheckDeleteBoardWithValidData_P"/>
+                </methods>
+            </class>
+
+
+
+
+>>>>>>> 0d646a18f2b9771cbebb1506086826d49ed10ccb
         </classes>
     </test>
 </suite>
